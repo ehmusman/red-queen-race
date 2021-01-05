@@ -10,39 +10,39 @@ function App() {
 
   useEffect(() => {
     /* Background animations */
-    var sceneryFrames = [
+    var frames = [
       { transform: "translateX(100%)" },
       { transform: "translateX(-100%)" },
     ];
 
-    var sceneryTimingBackground = {
+    var timingBackground = {
       duration: 36000,
       iterations: Infinity,
     };
 
-    var sceneryTimingForeground = {
+    var timingForeground = {
       duration: 12000,
       iterations: Infinity,
     };
 
     var background1Movement = background1.current.animate(
-      sceneryFrames,
-      sceneryTimingBackground
+      frames,
+      timingBackground
     );
 
     var background2Movement = background2.current.animate(
-      sceneryFrames,
-      sceneryTimingBackground
+      frames,
+      timingBackground
     );
 
     var foreground1Movement = foreground1.current.animate(
-      sceneryFrames,
-      sceneryTimingForeground
+      frames,
+      timingForeground
     );
 
     var foreground2Movement = foreground2.current.animate(
-      sceneryFrames,
-      sceneryTimingForeground
+      frames,
+      timingForeground
     );
 
     var spriteFrames = [
